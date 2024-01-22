@@ -1,0 +1,19 @@
+
+
+
+footer{
+    background-color: #2F2F2F;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    line-height: 150px;
+    color: white;
+    a{
+        color: rgb(23, 216, 184);
+        &:hover{
+            color: rgb(158, 223, 30);
+            text-decoration:underline;
+        }
+        text-decoration: none;
+    }
+}

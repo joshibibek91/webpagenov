@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Broadway Infosys</title>
+
+    <style>
+        .hide {
+            display: none;
+        }
+
+        .calculator {
+            background-color: grey;
+            width: 250px;
+            padding-bottom: 20px;
+            border-radius: 10px;
+            /* height: 300px; */
+        }
+
+        .calculator input {
+            width: 70%;
+            height: 25px;
+            margin: 15px;
+            border-radius: 5px;
+            font-size: 20px;
+        }
+
+        .keys {
+            display: flex;
+            flex-wrap: wrap;
+            width: 85%;
+            /* background-color: yellow; */
+            margin: 5px auto;
+            /* flex: 1; */
+            justify-content: space-between;
+            gap: 15px;
+
+        }
+
+        .calculator button {
+
+            width: 40px;
+            height: 40px;
+            border-radius: 5px;
+            box-shadow: 2px 2px;
+            font-size: 20px;
+            font-weight: bolder;
+
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <button class="color_red" onclick="document.querySelector('h2').style.color='red'"> COLOR RED</button>
+    <button class="bg_yellow" onclick="document.querySelector('h2').style.backgroundColor='yellow'">Yellow
+        Background</button>
+    <button class="makebold" onclick="document.querySelector('h2').style.fontWeight='bold'">BOLD</button>
+    <button class="makeitallic" onclick="document.querySelector('h2').style.fontStyle='Italic'">Itallic</button>
+    <button class="makeunderline"
+        onclick="document.querySelector('h2').style.textDecoration='Underline'">Underline</button>
+    <button class="size35" onclick="document.querySelector('h2').style.fontSize='35px'">SIZE-35</button>
+    <button class="all" onclick="text_format_all()">ALL</button>
+    <h2>Broadway Infosys</h2>
+    <hr>
+    <hr>
+
+    <div class="color-pic">
+        <label for="">Change Text Color Directly </label><input type="color" id="color" onchange="bgChange()"><br><br>
+    </div>
+    <input type="color" id="textColor" />
+    <button onclick="changeColor()">Change</button>
+    <input type="color" id="backgroundcolor" />
+    <button onclick="bacgroundcolor()">Change Background Color</button>
+    <select name="font-size" id="fontsize" onchange="fontSize()">
+        <script>
+            for (var i = 1; i <= 50; i++) {
+                document.write(`<option>${i}</option>`);
+            }
+        </script>
+    </select>
+    <select name="text-effect" id="texteffect" onchange="texteffect()">
+        <option value="1">ALL</option>
+        <option value="2">Bold</option>
+        <option value="3">Italic</option>
+        <option value="4">Underline</option>
+        <option value="5">Bold and Italic</option>
+        <option value="6">Bold and Underline</option>
+        <option value="7">Italic and Underline</option>
+        <option value="8">None</option>
+
+
+    </select><br><br>
+
+
+    <div class="pname">Bibek Joshi</div>
+
+
+    <br><br>
+    <hr>
+    <hr><br><br>
+
+
+
+    <button onclick="onOFF()" id="on-off">ON</button>
+    <button id="hide" onclick="document.querySelector('.bulb').classList.add('hide')">Hide</button>
+    <button onclick="document.querySelector('.bulb').classList.remove('hide')">Show</button>
+    <button onclick="document.querySelector('.bulb').classList.toggle('hide')">Hide/Show</button>
+    <button>Hide</button>
+
+    <br><br>
+
+    <img src="OFF.jpg" class="bulb" width="30%">
+
+
+    <div>
+        Enter Your Password
+        <input type="password" id="show-password">
+        <input type="checkbox" id="passwordshow" value="on" onclick="showpassword()">
+        Show Password
+    </div>
+
+    <script>
+        onOFF = () => {
+            var get_value = document.querySelector('#on-off').innerHTML
+
+            if (get_value == "ON") {
+                document.querySelector('#on-off').innerHTML = "OFF"
+                document.querySelector('.bulb').src = "ON.jpg"
+
+            }
+
+            else {
+                document.querySelector('#on-off').innerHTML = "ON"
+                document.querySelector('.bulb').src = "OFF.jpg"
+
+            }
+
+
+        }
+        bgChange = () => {
+            var c = document.querySelector('#color').value
+            console.log(c)
+            document.querySelector('.pname').style.color = c;
+        }
+        changeColor = () => {
+            var textcolor = document.querySelector("#textColor").value;
+            document.querySelector(".pname").style.color = textcolor;
+        }
+        bacgroundcolor = () => {
+            var bg = document.querySelector('#backgroundcolor').value;
+            document.querySelector('.pname').style.backgroundColor = bg;
+        }
+
+        fontSize = () => {
+            var size = document.querySelector("#fontsize").value + "px";
+            document.querySelector('.pname').style.fontSize = size;
+        }
+
+        texteffect = () => {
+            var effect = document.querySelector('#texteffect').value;
+
+            if (effect == 1) {
+                document.querySelector('.pname').style.fontStyle = "Italic";
+                document.querySelector('.pname').style.textDecoration = "Underline";
+                document.querySelector('.pname').style.fontWeight = "bold";
+            }
+            else if (effect == 2) {
+                document.querySelector('.pname').style.fontStyle = "normal";
+                document.querySelector('.pname').style.textDecoration = "none";
+                document.querySelector('.pname').style.fontWeight = "bold";
+            }
+            else if (effect == 3) {
+                document.querySelector('.pname').style.fontStyle = "Italic";
+                document.querySelector('.pname').style.textDecoration = "none";
+                document.querySelector('.pname').style.fontWeight = "normal";
+            }
+            else if (effect == 4) {
+                document.querySelector('.pname').style.fontStyle = "normal";
+                document.querySelector('.pname').style.textDecoration = "Underline";
+                document.querySelector('.pname').style.fontWeight = "normal";
+            }
+            else if (effect == 5) {
+                document.querySelector('.pname').style.fontStyle = "Italic";
+                document.querySelector('.pname').style.textDecoration = "none";
+                document.querySelector('.pname').style.fontWeight = "bold";
+            }
+            else if (effect == 6) {
+                document.querySelector('.pname').style.fontStyle = "normal";
+                document.querySelector('.pname').style.textDecoration = "Underline";
+                document.querySelector('.pname').style.fontWeight = "bold";
+            }
+            else if (effect == 7) {
+                document.querySelector('.pname').style.fontStyle = "Italic";
+                document.querySelector('.pname').style.textDecoration = "Underline";
+                document.querySelector('.pname').style.fontWeight = "normal";
+            }
+            else if (effect == 8) {
+                document.querySelector('.pname').style.fontStyle = "normal";
+                document.querySelector('.pname').style.textDecoration = "none";
+                document.querySelector('.pname').style.fontWeight = "normal";
+            }
+        }
+
+        showpassword = () => {
+            var sp = document.querySelector('#passwordshow').value;
+            if (sp == "on") {
+                document.querySelector("#show-password").type = "text";
+                document.querySelector('#passwordshow').value = "off";
+
+            }
+            else {
+                document.querySelector("#show-password").type = "password";
+                document.querySelector('#passwordshow').value = "on";
+
+            }
+        }
+    </script>
+    <br><br>
+
+    <hr>
+    <hr>
+
+    <br><br>
+    <div class="calculator">
+        <input type="text">
+        <div class="keys">
+            <button value="7">7</button>
+            <button value="8">8</button>
+            <button value="9">9</button>
+            <button value="/">/</button>
+            <button value="4">4</button>
+            <button value="5">5</button>
+            <button value="6">6</button>
+            <button value="*">*</button>
+            <button value="1">1</button>
+            <button value="2">2</button>
+            <button value="3">3</button>
+            <button value="-">-</button>
+            <button value="C">C</button>
+            <button value="0">0</button>
+            <button value="=">=</button>
+            <button value="+">+</button>
+
+
+
+
+        </div>
+    </div>
+
+    </div>
+</body>
+
+</html>

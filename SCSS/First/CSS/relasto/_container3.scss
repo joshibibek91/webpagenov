@@ -1,0 +1,134 @@
+.container3{
+    background-color: #FFF7F0;
+    height: 300px;
+    margin-top: 100px;
+    .grid{
+        margin: 0 170px 0 170px;
+        
+        // line-height: 300px;
+        // width: 100%;
+        display: grid;
+        gap: 70px;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 150px;
+        grid-template-areas: "owned properties transactions clients";
+
+        .owned{
+
+            // background-color: red;
+            grid-area: owned;
+            width: 200px;
+            margin-top: 55px;
+            
+
+            
+            // transform: translateY(50%);
+            
+
+            .circle{
+                
+                height: 60px;
+                width: 60px;
+                background-color: white;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-bottom: 20px;
+                
+            }
+            
+
+            .value{
+                font-size: 46px;
+            }
+            p{
+                font-size: 20px;
+                color: rgb(64, 111, 133);
+            }
+        }
+        .properties{
+            // background-color: red;
+            grid-area: properties;
+            width: 200px;
+            margin-top: 55px;
+
+            .circle{
+                
+                height: 60px;
+                width: 60px;
+                background-color: white;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-bottom: 20px;
+                
+            }
+
+            .value{
+                font-size: 46px;
+            }
+            p{
+                font-size: 20px;
+                color: rgb(64, 111, 133);
+                font-weight: 600;
+            }
+        }
+        .transactions{
+            // background-color: red;
+            grid-area: transactions;
+            width: 200px;
+            margin-top: 55px;
+
+            .circle{
+                
+                height: 60px;
+                width: 60px;
+                background-color: white;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-bottom: 20px;
+                
+            }
+
+            .value{
+                font-size: 46px;
+            }
+            p{
+                font-size: 20px;
+                color: rgb(64, 111, 133);
+            }
+        }
+        .clients{
+            // background-color: red;
+            grid-area: clients;
+            width: 200px;
+            margin-top: 55px;
+
+            .circle{
+                
+                height: 60px;
+                width: 60px;
+                background-color: white;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-bottom: 20px;
+                
+            }
+
+            .value{
+                font-size: 46px;
+            }
+            p{
+                font-size: 20px;
+                color: rgb(64, 111, 133);
+            }
+        }
+    }
+    
+}

@@ -1,0 +1,71 @@
+
+
+header{ 
+    // background-color: grey;
+    
+    text-align: center;
+    line-height: 70px;
+    height: 70px;
+    // border: solid 1px red;
+    display: grid;
+    color: black;
+    grid-template-columns: repeat(14, 1fr);
+    grid-template-rows: 70px;
+    grid-template-areas: ". logo . . home listing agents property blog . . search login .";
+
+    .logo{
+        
+        // background-color: blanchedalmond;
+        grid-area: logo;
+        line-height: 70px;
+        display: flex;
+        align-items: center;
+        
+        font-family: 'Marko One', serif;
+        font-size: 20px;
+        font-weight: normal;
+        color: rgb(253, 101, 11)
+        ;
+
+        img{
+            padding: 0 10px 0 ;
+        }
+
+        
+        
+    }
+
+    .home{
+        // background-color: skyblue;
+        grid-area: home;
+    }
+
+    .listing{
+        // background-color: palevioletred;
+        grid-area: listing;
+    }
+    .agents{
+        // background-color: grey;
+        grid-area: agents;
+    }
+
+    .property{
+        // background-color: aquamarine;
+        grid-area: property;
+    }
+
+    .blog{
+        // background-color: aquamarine;
+        grid-area: blog;
+    }
+
+    .search{
+        // background-color: aquamarine;
+        grid-area: search;
+    }
+
+    .login{
+        // background-color: aquamarine;
+        grid-area: login;
+    }
+}

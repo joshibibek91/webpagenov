@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body{
+    margin: 0;
+    // background-color: rgb(161, 103, 28);
+    font-family: 'Roboto', sans-serif;
+}
+
+@import 'contact.scss';
+@import 'header.scss';
+@import 'container1.scss';
+@import 'container2.scss';
+@import 'container3.scss';
+@import 'container4.scss';
+@import 'footer.scss';
+

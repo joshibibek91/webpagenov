@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* .box {
+            height: 200px;
+            width: 200px;
+            background-color: blueviolet;
+        } */
+        #effect {
+            background-color: maroon;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Effects-2-Apply</h1><br>
+    <hr><br>
+
+
+    <div class="w1">Width</div>
+    <input type="number" class="width">
+
+    <div class="h1">Height</div>
+    <input type="number" class="height">
+
+    <button id="btn"> Apply</button>
+    <div class="box"></div><br><br>
+
+    <div id="effect"></div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script>
+        $('#btn').click(function () {
+            var wt = $('.width').val();
+            var ht = $('.height').val();
+            $('#effect').animate({
+                width: wt + 'px',
+                height: ht + 'px'
+            }, 2000)
+
+        })
+    </script>
+</body>
+
+</html>

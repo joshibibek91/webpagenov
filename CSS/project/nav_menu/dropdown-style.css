@@ -1,0 +1,51 @@
+*{
+    list-style: none;
+    padding: 10px;
+    margin: 0;
+}
+
+
+
+ul li{
+    text-align: center;
+    position: relative;
+    float: left;
+    width: 150px;
+    border: 1px solid red;
+    background-color: orange;
+    
+}
+
+ul li:hover{
+    background-color: red;
+}
+
+
+/* ul ul{
+    display: none;
+} */
+
+ul ul li{
+    text-align: left;
+    padding: 0 0 0 10px;
+   
+
+}
+
+
+
+ul ul ul{
+    position: absolute;
+    top: 0;
+    left: 100%;
+    
+}
+
+ul ul{
+    
+    display: none;
+}
+
+ul li:hover > ul{
+    display: block;
+}

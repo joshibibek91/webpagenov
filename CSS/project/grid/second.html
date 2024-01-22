@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .container{
+            display: grid;
+            gap: 10px;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: 100px 200px 200px 100px;
+            grid-template-areas: "header header header"
+                                "aside cont1 cont1"
+                                "aside cont2 cont3"
+                                "footer footer footer";
+        }
+
+        header{
+            background-color: blue;
+            grid-area: header;
+
+        }
+
+        aside{
+            background-color: cadetblue;
+            grid-area: aside;
+
+        }
+
+        .cont1{
+            background-color: darkcyan;
+            grid-area: cont1;
+        }
+        .cont2{
+            background-color: rgb(83, 139, 0);
+            grid-area: cont2;
+        }
+        .cont3{
+            background-color: rgb(90, 0, 139);
+            grid-area: cont3;
+        }
+        footer{
+            background-color: darkblue;
+            grid-area: footer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            HEADER 
+        </header>
+        <aside>
+            SIDE-BAR
+        </aside>
+        <div class="cont1">CONTENT1</div>
+        <div class="cont2">CONTENT2</div>
+        <div class="cont3">CONTENT3</div>
+
+        <footer>
+            FOOTER 
+        </footer>
+    </div>
+</body>
+</html>

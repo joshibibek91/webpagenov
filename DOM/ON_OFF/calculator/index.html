@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="calculator">
+        <input type="text" class="inp">
+        <div class="keys">
+            <button value="7" onclick="document.querySelector('.inp').value +='7'">7</button>
+            <button value="8" onclick="document.querySelector('.inp').value +='8'">8</button>
+            <button value="9" onclick="document.querySelector('.inp').value +='9'">9</button>
+            <button value="/" onclick="document.querySelector('.inp').value +='/'">/</button>
+            <button value="4" onclick="document.querySelector('.inp').value +='4'">4</button>
+            <button value="5" onclick="document.querySelector('.inp').value +='5'">5</button>
+            <button value="6" onclick="document.querySelector('.inp').value +='6'">6</button>
+            <button value="*" onclick="document.querySelector('.inp').value +='*'">*</button>
+            <button value="1" onclick="document.querySelector('.inp').value +='1'">1</button>
+            <button value="2" onclick="document.querySelector('.inp').value +='2'">2</button>
+            <button value="3" onclick="document.querySelector('.inp').value +='3'">3</button>
+            <button value="-" onclick="document.querySelector('.inp').value +='-'">-</button>
+            <button value="C" onclick="document.querySelector('.inp').value = ' '">C</button>
+            <button value="0" onclick="document.querySelector('.inp').value +='0'">0</button>
+            <button value="=" onclick="calculation()">=</button>
+            <button value="+" onclick="document.querySelector('.inp').value +='+'">+</button>
+
+
+
+
+        </div>
+    </div>
+    <script>
+        calculation = () => {
+            var get_value = document.querySelector('.inp').value;
+            // console.log(get_value)
+            document.querySelector('.inp').value = eval(get_value);
+        }
+    </script>
+
+    </div>
+</body>
+
+</html>

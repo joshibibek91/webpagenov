@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" id="currency1" placeholder="Input Currency" />
+    <select name="convert" id="convert1">
+        <option value="usd">USD</option>
+        <option value="nrs">NRS</option>
+    </select><br /><br /><br />
+    <input type="text" id="currency2" placeholder="Input Currency" />
+    <select name="convert" id="convert2">
+        <option value="nrs">NRS</option>
+        <option value="usd">USD</option>
+    </select>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script>
+        $("#currency1, #convert1").keyup(function () {
+            var a = $("#currency1").val();
+            var b = $("#convert1").val();
+            var d = $("#convert2").val();
+            var rate = 133;
+            var convertedvalue;
+
+            if (b === "usd" && d === "nrs") {
+                convertedvalue = a * rate;
+            } else if (b === "nrs" && d === "usd") {
+                convertedvalue = a / rate;
+            } else {
+                convertedvalue = a;
+            }
+
+            if (b === d) {
+                $("#currency2").val($("#currency1").val());
+            } else {
+                $("#currency2").val(convertedvalue);
+            }
+        });
+
+        $("#currency2, #convert2").keyup(function () {
+            var c = $("#currency2").val();
+            var b = $("#convert1").val();
+            var d = $("#convert2").val();
+            var rate = 133;
+            var convertedvalue;
+
+            if (d === "usd" && b === "nrs") {
+                convertedvalue = c * rate;
+            } else if (d === "nrs" && b === "usd") {
+                convertedvalue = c / rate;
+            } else {
+                convertedvalue = c;
+            }
+
+            if (b === d) {
+                $("#currency1").val($("#currency2").val());
+            } else {
+                $("#currency1").val(convertedvalue);
+            }
+        });
+    </script>
+</body>
+
+</html>

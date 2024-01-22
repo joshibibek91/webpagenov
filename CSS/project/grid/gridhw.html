@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         .container{
+            font-size: 25px;
+            text-align: center;
+            line-height: 100px;
+            color: white;
+            display: grid;
+            gap: 10px;
+            grid-template-columns: repeat(7, 1fr);
+            grid-template-rows: 100px 100px 100px 100px 100px 100px;
+            grid-template-areas: "featured featured featured mainhead mainhead mainhead mainhead"
+                                "aside products products products products products feature2"
+                                "aside products products products products products ."
+                                "aside bonus1 . . . bonus3 feature3"
+                                "aside . bonus2 bonus2 . . bonus4"
+                                "aside footer footer footer footer footer footer";
+        }
+        .featured{
+            background-color: red;
+            grid-area: featured;
+        }
+
+        .mainhead{
+            background-color: black;
+            grid-area: mainhead;
+        }
+        .aside{
+            background-color: green;
+            grid-area: aside;
+        }
+        .products{
+            background-color: blue;
+            grid-area: products;
+        }
+        .feature2{
+            background-color: red;
+            grid-area: feature2;
+        }
+        .feature3{
+            background-color: red;
+            grid-area: feature3;
+        }.bonus1{
+            background-color: red;
+            grid-area: bonus1;
+        }.bonus2{
+            background-color: red;
+            grid-area: bonus2;
+        }.bonus3{
+            background-color: red;
+            grid-area: bonus3;
+        }.bonus4{
+            background-color: red;
+            grid-area: bonus4;
+        }
+        footer{
+            background-color: orange;
+            grid-area: footer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="featured">Featured Mercandising</div>
+        <div class="mainhead">Header</div>
+        
+        <div class="aside">Side Bar</div>
+        <div class="products">Products</div>
+        <div class="feature2">Feature2</div>
+        <div class="feature3">Feature3</div>
+        <div class="bonus1">Bonus1</div>
+        <div class="bonus2">Bonus2</div>
+        <div class="bonus3">Bonus3</div>
+        <div class="bonus4">Bonus4</div>
+        <footer>Footer</footer>
+    </div>
+    
+    
+</body>
+</html>

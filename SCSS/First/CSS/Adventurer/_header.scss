@@ -1,0 +1,56 @@
+
+header{
+    // background-color: #c24646;
+    height: 75px;
+    display: flex;
+    justify-content: space-between;
+    line-height: 75px;
+    // margin: 0 auto;
+    padding: 0 200px;
+    color: #474E5D;
+    font-size: 15px;
+    font-weight: 200;
+
+    .left{
+        a{
+            text-decoration: none;
+        }
+        
+        &:hover{
+            
+            color: #1ABC9C;
+        }
+        
+    }
+    .right{
+        text-decoration: none;
+        width: 250px;
+        display: flex;
+        justify-content: space-between;
+        a{
+            text-decoration: none;
+        }
+        .who{
+            a{
+            &:hover{
+                color: #1ABC9C;
+            }
+        }
+        }
+            
+        }
+        .what{
+            a{
+                &:hover{
+                    color: #1ABC9C;
+                }
+            }
+        }
+        .where{
+            a{
+                &:hover{
+                    color: #1ABC9C;
+                }
+            }
+    }
+}

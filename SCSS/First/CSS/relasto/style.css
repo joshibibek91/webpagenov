@@ -1,0 +1,348 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&family=Marko+One&family=Roboto:ital,wght@0,400;1,700&display=swap");
+body {
+  margin: 0;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+header {
+  text-align: center;
+  line-height: 70px;
+  height: 70px;
+  display: grid;
+  color: black;
+  grid-template-columns: repeat(14, 1fr);
+  grid-template-rows: 70px;
+  grid-template-areas: ". logo . . home listing agents property blog . . search login .";
+}
+header .logo {
+  grid-area: logo;
+  line-height: 70px;
+  display: flex;
+  align-items: center;
+  font-family: "Marko One", serif;
+  font-size: 20px;
+  font-weight: normal;
+  color: rgb(253, 101, 11);
+}
+header .logo img {
+  padding: 0 10px 0;
+}
+header .home {
+  grid-area: home;
+}
+header .listing {
+  grid-area: listing;
+}
+header .agents {
+  grid-area: agents;
+}
+header .property {
+  grid-area: property;
+}
+header .blog {
+  grid-area: blog;
+}
+header .search {
+  grid-area: search;
+}
+header .login {
+  grid-area: login;
+}
+
+.container1 {
+  display: grid;
+  background-color: #FFF7F0;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 780px;
+  grid-template-areas: "left right";
+}
+.container1 .left {
+  grid-area: left;
+  padding: 60px 0 0 120px;
+}
+.container1 .left .find {
+  font-weight: bold;
+  font-size: 46px;
+  line-height: 1.5;
+}
+.container1 .left .wehelp {
+  padding: 20px 0 20px 0;
+  font-size: 20px;
+  line-height: 1.5;
+  color: rgb(98, 98, 98);
+}
+.container1 .left .orderbox {
+  padding: 5px 0 0 0;
+  width: 100%;
+  height: 430px;
+  border-radius: 15px;
+  background-color: white;
+  font-size: 18px;
+}
+.container1 .left .orderbox .top {
+  font-size: 18px;
+  margin: 25px;
+  text-align: center;
+  line-height: 50px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 50px;
+  gap: 15px;
+  grid-template-areas: "buy sell rent";
+}
+.container1 .left .orderbox .top .buy {
+  color: white;
+  background-color: black;
+  border-radius: 10px;
+}
+.container1 .left .orderbox .top .sell {
+  color: black;
+  background-color: #DBDBDB;
+  border-radius: 10px;
+}
+.container1 .left .orderbox .top .rent {
+  color: black;
+  background-color: #DBDBDB;
+  border-radius: 10px;
+}
+.container1 .left .orderbox .middle {
+  margin: 25px;
+  color: #7B7B7B;
+}
+.container1 .left .orderbox .middle .location {
+  width: 100%;
+  height: 60px;
+  border: 1px solid #DBDBDB;
+  border-radius: 15px;
+  line-height: 60px;
+  display: flex;
+  justify-content: space-around;
+  gap: 400px;
+}
+.container1 .left .orderbox .middle .location img {
+  width: 20px;
+  height: auto;
+}
+.container1 .left .orderbox .middle .property {
+  width: 100%;
+  height: 60px;
+  border: 1px solid #DBDBDB;
+  border-radius: 15px;
+  line-height: 60px;
+  display: flex;
+  justify-content: space-around;
+  gap: 400px;
+  margin-top: 20px;
+}
+.container1 .left .orderbox .middle .property img {
+  width: 20px;
+  height: auto;
+  padding-right: 15px;
+}
+.container1 .left .orderbox .middle .property .propertytype {
+  padding-left: 15px;
+}
+.container1 .left .orderbox .middle .price {
+  width: 100%;
+  height: 60px;
+  border: 1px solid #DBDBDB;
+  border-radius: 15px;
+  line-height: 60px;
+  display: flex;
+  justify-content: space-around;
+  gap: 400px;
+  margin-top: 20px;
+}
+.container1 .left .orderbox .middle .price img {
+  width: 20px;
+  height: auto;
+  padding-right: 10px;
+}
+.container1 .left .orderbox .middle .price .pricerange {
+  padding-left: 10px;
+}
+.container1 .left .orderbox .bottom {
+  margin: 25px;
+  background-color: black;
+  color: white;
+  border-radius: 15px;
+  text-align: center;
+  height: 60px;
+  line-height: 60px;
+}
+.container1 .right {
+  grid-area: right;
+  display: flex;
+  justify-content: flex-end;
+  line-height: 700px;
+  align-items: center;
+}
+.container1 .right img {
+  width: auto;
+  height: 70%;
+}
+
+.container2 {
+  display: grid;
+  margin: 100px 170px 0 170px;
+  gap: 20px;
+  grid-template-columns: 625px 250px 250px;
+  grid-template-rows: 195px 195px;
+  grid-template-areas: "simple search visit" "simple get enjoy";
+}
+.container2 .simple {
+  padding: 70px 55px 0 55px;
+  background-color: #FFE0CE;
+  border-radius: 20px;
+  grid-area: simple;
+}
+.container2 .simple .p1 {
+  font-size: 36px;
+}
+.container2 .simple .p2 {
+  font-size: 18px;
+  font-weight: 100;
+  padding-top: 30px;
+}
+.container2 .simple button {
+  margin-top: 60px;
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+  height: 50px;
+  width: 140px;
+  font-size: 16px;
+  font-family: "Manrope";
+}
+.container2 .search {
+  background-color: #FBEEE6;
+  border-radius: 15px;
+  grid-area: search;
+  font-size: 28px;
+  padding: 30px;
+}
+.container2 .visit {
+  background-color: #FBEEE6;
+  border-radius: 15px;
+  grid-area: visit;
+  font-size: 28px;
+  padding: 30px;
+}
+.container2 .get {
+  background-color: #FBEEE6;
+  border-radius: 15px;
+  grid-area: get;
+  font-size: 28px;
+  padding: 30px;
+}
+.container2 .enjoy {
+  background-color: #FBEEE6;
+  border-radius: 15px;
+  grid-area: enjoy;
+  font-size: 28px;
+  padding: 30px;
+}
+
+.container3 {
+  background-color: #FFF7F0;
+  height: 300px;
+  margin-top: 100px;
+}
+.container3 .grid {
+  margin: 0 170px 0 170px;
+  display: grid;
+  gap: 70px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 150px;
+  grid-template-areas: "owned properties transactions clients";
+}
+.container3 .grid .owned {
+  grid-area: owned;
+  width: 200px;
+  margin-top: 55px;
+}
+.container3 .grid .owned .circle {
+  height: 60px;
+  width: 60px;
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.container3 .grid .owned .value {
+  font-size: 46px;
+}
+.container3 .grid .owned p {
+  font-size: 20px;
+  color: rgb(64, 111, 133);
+}
+.container3 .grid .properties {
+  grid-area: properties;
+  width: 200px;
+  margin-top: 55px;
+}
+.container3 .grid .properties .circle {
+  height: 60px;
+  width: 60px;
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.container3 .grid .properties .value {
+  font-size: 46px;
+}
+.container3 .grid .properties p {
+  font-size: 20px;
+  color: rgb(64, 111, 133);
+  font-weight: 600;
+}
+.container3 .grid .transactions {
+  grid-area: transactions;
+  width: 200px;
+  margin-top: 55px;
+}
+.container3 .grid .transactions .circle {
+  height: 60px;
+  width: 60px;
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.container3 .grid .transactions .value {
+  font-size: 46px;
+}
+.container3 .grid .transactions p {
+  font-size: 20px;
+  color: rgb(64, 111, 133);
+}
+.container3 .grid .clients {
+  grid-area: clients;
+  width: 200px;
+  margin-top: 55px;
+}
+.container3 .grid .clients .circle {
+  height: 60px;
+  width: 60px;
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.container3 .grid .clients .value {
+  font-size: 46px;
+}
+.container3 .grid .clients p {
+  font-size: 20px;
+  color: rgb(64, 111, 133);
+}/*# sourceMappingURL=style.css.map */

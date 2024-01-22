@@ -1,0 +1,30 @@
+
+
+.container1{
+    height: 675px;
+    background-color: #1ABC9C;
+    color: white;
+    font-size: 25px;
+    
+    
+    .top{
+        padding-top: 80px;
+        display: flex;
+        justify-content: center;
+    }
+    .middle{
+        padding: 40px 0 0 0;
+        display: flex;
+        justify-content: center;
+        // border: solid 5px red;
+        img{
+            border-radius: 50%;
+        }
+
+    }
+    .bottom{
+        display: flex;
+        justify-content: center;
+        padding: 60px 0 0 0;
+    }
+}

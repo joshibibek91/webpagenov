@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Broadway</title>
+</head>
+<body>
+    <button onclick="changeTitle()"> Change Title</button>
+    <button onclick="ChangeColorRed()"> Color Red</button>
+
+    <div id="cont">
+        <h1 id="h1"> Set Title Name: <span id=title> Hari Om </span></h1>
+
+    </div>
+    <hr>
+
+    <div> Enter your number: <input type="text" id="number"><button onclick="oddeven()">Result<span id="result"></button></span></div>
+
+
+    <script>
+        function changeTitle() {
+            var get_title = document.querySelector('#title').innerText
+            document.title= get_title
+
+        }
+
+        function ChangeColorRed() {
+            document.querySelector('#title').style.color='red'
+        }
+
+
+        oddeven = ()=>{
+            var num = document.querySelector("#number").value
+            rem = parseInt(num)%2
+            if(rem==0){
+                msg = `${num} is EVEN number`
+            }
+            else{
+                msg=`${num} is ODD number`
+            }
+
+            document.querySelector('#result').innerText = msg
+        }
+    </script>
+</body>
+</html>

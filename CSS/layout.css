@@ -1,0 +1,42 @@
+.header{
+    background-color: blueviolet;
+    height: 100px;
+    text-align: center;
+    line-height: 100px;
+}
+
+.cont{
+    background-color: rgb(190, 237, 114);
+    height: 500px;
+    width: 33%;
+    text-align: center;
+    line-height: 500px;
+    float: left;
+}
+
+.cont2{
+    background-color: aqua;
+    height: 500px;
+    width: 34%;
+    text-align: center;
+    line-height: 500px;
+    float: left;
+    
+}
+
+.cont3{
+    background-color: sandybrown;
+    height: 500px;
+    width: 33%;
+    text-align: center;
+    line-height: 500px;
+    float: left;
+}
+
+.footer{
+    background-color: forestgreen;
+    height: 100px;
+    text-align: center;
+    line-height: 100px;
+   clear: both;
+}

@@ -1,0 +1,41 @@
+.flex{
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+.contact{
+    background-color: #212934;
+    color: white;
+    height: 40px;
+    font-size: 12px;
+    display: flex;
+    
+
+    .left{
+        // margin-left: 120px;
+        // background-color: red;
+        // display: flex;
+        // align-items: center;
+        
+        
+        
+        .site{
+            
+            // display: flex;
+            // justify-content: left;
+            // p{
+            //     padding: 0 0 0 10px;
+            // }
+        }
+        .phone{
+            // display: flex;
+            // justify-items: left;
+        }
+    }
+
+    .right{
+        // display: flex;
+    }
+}
+

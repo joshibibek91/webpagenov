@@ -1,0 +1,305 @@
+
+body{
+    margin: 0;
+    padding: 0;
+    // width: 100%;
+    // background-color: rgba(26, 27, 27, 0.975);
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+body {
+    img{
+    width: 100%;
+    height: 736px;
+}
+}
+
+.nav1{
+    display: flex;
+    // align-items: center;
+    justify-content: center;
+
+
+    header{
+        display: flex;
+        
+        align-items: center;
+        justify-content: space-between;
+        width: 1100px;
+        height: 60px;
+        // background-color: red;
+        position: absolute;
+        top: 0px;
+        // margin: auto;
+        // padding: 0 100px;
+        // left: 25px;
+        // right: 25px;
+        color: white;
+        font-size: 14px;
+
+        .left{
+            // background-color: red;
+            .name{
+                font-family: Arial, Helvetica, sans-serif;
+                color: #FF7200;
+                font-size: 35px;
+                font-weight: 700;
+            }
+        }
+
+        .mid{
+            // background-color: blueviolet;
+            display: inline-block;
+            padding: 0 100px;
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            // transition: color 0.3s ease;
+            
+            .home:hover{
+                color: #FF7200;
+                transition: color 0.5s ease;
+            }
+            .about:hover{
+                color: #FF7200;
+                transition: color 0.5s ease;
+            }
+            .services:hover{
+                color: #FF7200;
+                transition: color 0.5s ease;
+            }
+            .design:hover{
+                color: #FF7200;
+                transition: color 0.5s ease;
+            }
+            .contact:hover{
+                color: #FF7200;
+                transition: color 0.5s ease;
+            }
+        }
+
+        .right{
+            
+            width: 450px;
+            height: 40px;
+            // background-color: greenyellow;
+            display: flex;
+            justify-content: center;
+            .search{
+                // border: #FF7200 1px solid;
+                border-radius: 15px;
+                display: flex;
+                justify-content: center;
+                // justify-items: center;
+                .search-input{
+                    width: 200px;
+                    border-top-left-radius: 5px;
+                    border-bottom-left-radius: 5px;
+                    background-color: transparent;
+                    border: #FF7200 2px solid;
+                    color: white;
+                    &::placeholder{
+                        padding-left: 10px;
+                        color: white;
+                        font-weight: 500;
+                        font-size: 15px;
+                    }
+                }
+                button{
+                    width: 95px;
+                    background-color: #FF7200;
+                    color: white;
+                    font-weight: 600;
+                    font-size: 15px;
+                    border: none;
+                    border-bottom-right-radius: 5px;
+                    &:hover{
+                        color: #3d2109;
+                        transition: color 0.5s ease;                            
+                    }
+                }
+            }
+        }
+            
+    }
+}
+.nav2{
+    display: flex;
+    justify-content: center;
+    .container{
+        
+        width: 1100px;
+        display: flex;
+        justify-content: space-between;
+        // background-color: indianred;
+        height: 400px;
+        
+        position: absolute;
+        top: 150px;
+        .left{
+            width: 700px;
+            padding: 40px 0 0 0;
+            .topic{
+                font-family: 'Times New Roman', Times, serif;
+                font-size: 50px;
+                font-weight: bold;
+                .top{
+                    color: white;
+                }
+                .middle{
+                    color: #FF7200;
+                }
+                .bottom{
+                    color: white;
+                }
+            }
+            .para{
+                padding: 15px 0 0 0;
+                color: white;
+                font-size: 17px;
+                line-height: 25px;
+            }
+
+            button{
+                margin: 20px 0 0 0;
+                width: 150px;
+                height: 40px;
+                background-color: #FF7200;
+                border-radius: 15px;
+                font-size: 20px;
+                border: none;
+            }
+        }
+
+        .right{
+            width: 300px;
+            height: 450px;
+            background-color: rgb(1, 1, 1);
+            border-radius: 20px;
+            .top{
+                width: 250px;
+                height: 45px;
+                background-color: white;
+                color: #FF7200;
+                border-radius: 15px;
+                margin: 25px auto;
+                font-size: 25px;
+                font-weight: 700;
+                display: flex;
+                justify-content: center;
+                // justify-items: center;
+                line-height: 45px;
+
+            }
+            .middle{
+                
+                .email{
+                    padding: 17px 0 0 0;
+                    display: flex;
+                    justify-content: center;
+                    
+                    .email-input{
+                        width: 250px;
+                        border: none;
+                        background-color:transparent;
+                        color: white;
+                        font-weight: 400;
+                        font-size: 15px;
+                        border-bottom: solid 2px #FF7200;
+                        &::placeholder{
+                            color: white;
+                            font-weight: 600;
+                            font-size: 15px;
+                        }
+                    }
+                }
+                .password{
+                    padding: 35px 0 0 0;
+                    display: flex;
+                    justify-content: center;
+                    
+                    .password-input{
+                        width: 250px;
+                        border: none;
+                        background-color:transparent;
+                        color: white;
+                        font-weight: 400;
+                        font-size: 15px;
+                        border-bottom: solid 2px #FF7200;
+                        &::placeholder{
+                            color: white;
+                            font-weight: 600;
+                            font-size: 15px;
+                        }
+                    }
+                }
+            }
+            button{
+                height: 45px;
+                width: 250px;
+                
+                margin: auto;
+                margin-top: 25px;
+                margin-bottom: 20px;
+                
+                border-radius: 15px;
+                border: none;
+                display: flex;
+                justify-content: center;
+                font-size: 20px;
+                line-height: 40px;
+                font-weight: 700;
+                
+                }
+                
+                
+                
+            }
+            .log-in:hover{
+                background-color: #FF7200;
+                 transition: color 0.5s ease;
+                 }
+            .signup{
+                
+                color: white;
+                font-weight: 500;
+                .first{
+                    display: flex;
+                    justify-content: center;
+                }
+                .second{
+                    display: flex;
+                    justify-content: center;
+                    .sign{
+                        color: #FF7200;
+                        padding: 0 8px 0 0;
+                    }
+
+                }
+            }
+
+            .with{
+                color: white;
+                display: flex;
+                justify-content: center;
+                padding: 15px 0 0 0;
+                font-family: 'Times New Roman', Times, serif;
+            }
+            .medias{
+                color: white;
+                margin: 30px 40px;
+                display: flex;
+                justify-content: space-between;
+                i{
+                    &:hover{
+                    color: #FF7200;
+                    transition: color 0.5s ease;
+                }
+                
+                
+            }
+
+        }
+    }
+}

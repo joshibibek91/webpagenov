@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1 {
+            background-color: yellow;
+            display: inline-block;
+        }
+    </style>
+</head>
+
+<body>
+    <button id="hide">Hide</button>
+    <button id="show">Show</button>
+    <button id="fadein">Fade-In</button>
+    <button id="fadeout">Fade-Out</button>
+    <button id="fadetoggle">Fade IN/OUT</button>
+    <button id="slideup">Slide Up</button>
+    <button id="slidedown">Slide Down</button>
+    <button id="slidetoggle">Slide Up/Down</button>
+
+    <button id="hide-show"> Hide/Show</button><br><br>
+
+    <input type="text" id="txt-cont"><br><br>
+    <h1 id="cont">Broadway Infosys</h1>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+    <script>
+        $('#hide').click(function () {
+            // alert('ok')
+
+            $('#cont').hide()
+            console.log('hi')
+        })
+
+        $('#show').click(function () {
+            $('#cont').show()
+        })
+
+        $('#hide-show').click(function () {
+            $('#cont').toggle()
+        })
+        $('#fadein').click(function () {
+            $('#cont').fadeIn()
+        })
+        $('#fadeout').click(function () {
+            $('#cont').fadeOut()
+        })
+        $('#fadetoggle').click(function () {
+            $('#cont').fadeToggle(3000)
+        })
+        $('#slideup').click(function () {
+            $('#cont').slideUp()
+        })
+        $('#slidedown').click(function () {
+            $('#cont').slideDown()
+        })
+        $('#slidetoggle').click(function () {
+            $('#cont').slideToggle()
+        })
+        $('#cont').mouseover(function () {
+            $(this).css('background-color', 'blue')
+        })
+        $('#cont').mouseleave(function () {
+            $(this).css('background-color', 'green')
+        })
+        $('#cont').mouseout(function () {
+            $(this).css('background-color', 'red')
+        })
+
+
+        $('#txt-cont').keyup(function () {
+            var get_value = $(this).val()
+            $('#cont').html(get_value)
+        })
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>

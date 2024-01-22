@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 150px 350px;
+        }
+        .box{
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            transform: rotate(45deg);
+        }
+
+        .box::after{
+            content: "";
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            background-color: red;
+            transform: translateY(-50%);
+
+            border-radius: 50%;
+
+
+        }
+        .box::before{
+            content: "";
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            background-color: red;
+            transform: translateX(-50%);
+
+            border-radius: 50%;
+
+
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>

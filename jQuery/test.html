@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- Input box for entering a value -->
+    <input type="number" id="amountInput1" placeholder="Enter Amount" />
+
+    <!-- Dropdown to select currency type -->
+    <select id="currencyType1">
+        <option value="usd">USD</option>
+        <option value="nrs">NRS</option>
+    </select>
+
+    <!-- Input box for displaying and entering the converted value -->
+    <input type="number" id="amountInput2" placeholder="Converted Value" />
+
+    <!-- Dropdown to select currency type -->
+    <select id="currencyType2">
+        <option value="nrs">NRS</option>
+        <option value="usd">USD</option>
+    </select>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+
+    <script>
+        // Attach input and change events to the input boxes and currencyType dropdowns
+        $('#amountInput1, #currencyType1, #amountInput2, #currencyType2').on('input change', function () {
+            // Get the value entered in the first amountInput box
+            var inputAmount1 = parseFloat($('#amountInput1').val()) || 0;
+
+            // Get the selected currency type from the first dropdown
+            var currencyType1 = $('#currencyType1').val();
+
+            // Get the value entered in the second amountInput box
+            var inputAmount2 = parseFloat($('#amountInput2').val()) || 0;
+
+            // Get the selected currency type from the second dropdown
+            var currencyType2 = $('#currencyType2').val();
+
+            // Conversion rate: 1 USD = 133 NRS
+            var conversionRate = 133;
+
+            // Perform the conversion based on the selected currency types
+            // var convertedValue = (currencyType1 === 'usd' && currencyType2 === 'nrs') ? inputAmount1 * conversionRate :
+            //     (currencyType1 === 'nrs' && currencyType2 === 'usd') ? inputAmount1 / conversionRate :
+            //         (currencyType2 === 'usd' && currencyType1 === 'nrs') ? inputAmount2 * conversionRate :
+            //             (currencyType2 === 'nrs' && currencyType1 === 'usd') ? inputAmount2 / conversionRate :
+            //                 inputAmount1;
+
+            var convertedValue;
+
+            if (currencyType1 === 'usd' && currencyType2 === 'nrs') {
+                convertedValue = inputAmount1 * conversionRate;
+            } else if (currencyType1 === 'nrs' && currencyType2 === 'usd') {
+                convertedValue = inputAmount1 / conversionRate;
+            } else if (currencyType2 === 'usd' && currencyType1 === 'nrs') {
+                convertedValue = inputAmount2 * conversionRate;
+            } else if (currencyType2 === 'nrs' && currencyType1 === 'usd') {
+                convertedValue = inputAmount2 / conversionRate;
+            } else {
+                convertedValue = inputAmount1;
+            }
+
+            // Display the converted value in the available amountInput box
+            if (currencyType1 === currencyType2) {
+                $('#amountInput2').val($('#amountInput1').val());
+            } else {
+                $('#amountInput2').val(convertedValue.toFixed(2));
+            }
+        });
+    </script>
+</body>
+
+</html>

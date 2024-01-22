@@ -1,0 +1,212 @@
+   *{
+      margin: 0;
+      padding: 0;
+      font-family: Arial, Helvetica, sans-serif;
+   }
+   
+   body{
+      background-color: grey;
+   }
+   
+   
+   .container{
+    background-color: white;
+    width: 940px;
+    height: 1000px;
+    margin: auto;
+   
+   }
+
+   .logo{
+      float: left;
+   }
+
+   .contact1{
+      padding: 15px 20px 0 650px ;
+      text-align: right;
+   }
+
+   .contact2{
+      padding: 0 20px 0 0 ;
+      text-align: right;
+      /* float: left; */
+   }
+   .facebook{
+      position: absolute;
+      left: 1440px;
+      top: 53px;
+      /* padding: 0 0 0 0 ;
+      align-items: right; */
+   }
+
+   .tab{
+      font-size: 14px;
+      width: 260px;
+      height: 25px;
+      background-color: rgb(255, 255, 255);
+      position: absolute;
+      left: 1224px;
+      top: 110px;
+   }
+   
+   .tab .home{
+      color: rgb(66, 20, 20);
+      text-align: center;
+      width: 27%;
+      background-color: #D7D7D7;
+      line-height: 25px;
+      padding: 0 0 0 3px;
+      float: left;
+      
+   }
+
+   .tab .services{
+      color: white;
+      text-align: center;
+      width: 30%;
+      background-color: #044470;
+      line-height: 25px;
+      padding: 0 0 0 0;
+      float: left;
+      margin: 0 0 0 2px ;
+      
+   }
+   .tab .contact-us{
+      color: white;
+      text-align: center;
+      width: 39.5%;
+      background-color:#044470;
+      line-height: 25px;
+      padding: 0 0 0 0;
+      float: left;
+      margin: 0 0 0 2px;
+      
+   }
+
+   nav{
+      background-color:#D7D7D7;
+      width: 940px;
+      height: 340px;
+      position: absolute;
+      top: 135px;
+      margin: auto;
+      padding: 10px 0 0 0;
+   }
+   
+   nav .gym{
+      
+      margin: auto;
+      padding: 0 0 0 0;
+   }
+
+   .desc{
+      /* background-color: yellow; */
+      
+      width: 940px;
+      height: 250px;
+      padding: 15px 0 0 0 ;
+   }
+
+   .desc .left{
+      
+      width: 65%;
+      border-right: 1px dotted grey;
+
+      /* background-color: rgb(157, 134, 134); */
+      float: left;
+   }
+
+   .desc .left .welcome{
+      padding: 0 0 0 15px ;
+      color: #0f77be;
+      font-size: 21px;
+      font-weight: bold;
+      text-shadow: 0.5px 0.5px;
+   }
+
+   .desc .left .writeup{
+      padding: 15px 15px 0 15px ;
+      /* color: #0f77be; */
+      font-size: 12px;
+   }
+   .desc .left .list1heading{
+      font-size: 12px;
+      padding: 15px 0 0 15px ;
+      font-weight: bold;
+
+
+   }
+
+   .desc .left li{
+      padding: 10px 0 0 15px;
+      font-size: 12px;
+      list-style: none;
+   }
+
+
+.desc .left .list2heading{
+   font-size: 12px;
+   padding: 20px 0 0 15px ;
+   font-weight: bold;
+
+
+}
+
+.desc .right{
+   width: 33%;
+   /* background-color: red; */
+   padding: 0 0 0 15px;
+   float: left;
+   text-shadow: 0.5px 0.5px;
+}
+
+.desc .right .our-services{
+   padding: 0 0 15px 15px;
+   color: #0f77be;
+   font-size: 21px;
+   font-weight: bold;
+   
+
+}
+
+.desc .right li{
+   padding: 0 0 5px 15px;
+   font-size: 16px;
+   list-style: none;
+   font-family: 'Arial Narrow';
+   font-weight: bold;
+   color: rgb(45, 33, 75);
+   
+
+}
+footer{
+   background-color:#044470;
+   width: 940px;
+   height: 25px;
+   position: absolute;
+   margin: auto;
+   top: 1000px;
+}
+
+footer .left{
+   color: white;
+   width: 45%;
+   float: left;
+   padding: 0 0 0 15px;
+   line-height: 25px;
+   font-size: 11px;
+   font-weight: 400;
+
+}
+footer .right{
+   text-align: right;
+   color: white;
+   width: 49%;
+   float: left;
+   padding: 0 0 0 15px;
+   line-height: 25px;
+   font-size: 11px;
+   font-weight: 400;
+
+}
+

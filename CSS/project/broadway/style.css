@@ -1,0 +1,193 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,700&display=swap');
+
+
+
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
+
+:root{
+    --primary-color: maroon;
+}
+
+
+header{
+    /* border: 2px solid red; */
+    height: 100px;
+    margin: 0 0 0 100px;
+}
+
+.logo{
+    float: left;
+}
+
+.logo img{
+    height: 100px;
+}
+
+.all-courses{
+    line-height: 100px;
+    float: left;
+    padding: 0 50px 0 50px;
+    
+}
+
+.search{
+    
+    float: left;
+    padding: 40px 50px 0 0;
+    
+    
+}
+
+.contact{
+    
+    float: left;
+    padding: 30px 50px 0 0;
+}
+
+.send-enquiry{
+
+    margin: 30px;
+    padding: 15px 15px 15px 15px;
+    background-color: var(--primary-color);
+    border-radius: 10px;
+    float: left;
+    color: white;
+    
+    
+
+}
+
+.search .search-text{
+    border-radius: 20px;
+    height: 20px;
+    width: 300px;
+
+}
+
+
+nav{
+    text-align: center;
+    height: 20;
+    border-top: 1px solid rgb(233, 224, 224);
+}
+
+nav ul{
+    /* border: 1px solid red; */
+    list-style: none;
+    margin: 0;
+    padding: 0 0 0 100px;
+
+}
+
+nav ul li{
+    float: left;
+    padding: 10px 10px 10px 100px;
+    /* border: 1px solid brown; */
+}
+
+.float-size{
+    float: left;
+}
+
+section .left{
+    width: 30%;
+    height: 390px;
+    background-color: var(--primary-color);
+    padding: 60px 30px 0 30px;
+    color: white;
+}
+section .left .title{
+    font-size: 35px;
+    font-style: labrebaskerville;
+    padding: 0 0 20px 0;
+}
+
+section .left .subtitle{
+    padding: 0 0 25px 0 ;
+}
+
+section .left .desc{
+    line-height: 25px;
+    font-size: 16px;
+    padding: 0 0 30px 0;
+
+}
+
+section .left .button{
+    background-color: #81e9e6;
+    border: 1px solid black;
+    width: 180px;
+    padding: 18px;
+    border-radius: 9px;
+    color: var(--primary-color);
+}
+
+section .middle{
+    width: 40%;
+    height: 450px;
+    background-color: rgb(0, 217, 255);
+    float: left;
+}
+section .middle img{
+    width: 100%;
+    height: 100%;
+}
+
+section .right{
+    width: 25%;
+    height: 450px;
+    background-color: rgb(0, 217, 255);
+    float: left;
+}
+
+section .right .top{
+    width: 100%;
+    height: 225px;
+    background-color: var(--primary-color);
+    float: left;
+}
+section .right .top .hat img{
+    /* width: 100%; */
+    padding: 20px 0 0 20px ;
+}
+
+section .right .top .count{
+    font-size: 50px;
+    color: white;
+    padding: 0 0 0 20px;
+}
+
+section .right .top .inf{
+    padding: 20px 0 0 20px ;
+    color: white;
+    font-size: 18px;
+}
+
+section .right .bottom{
+    width: 100%;
+    height: 225px;
+    background-color: #81E9E6;
+    float: left;
+}
+
+section .right .bottom .comp img{
+    /* width: 100%; */
+    padding: 20px 0 0 20px ;
+}
+
+section .right .bottom .count2{
+    font-size: 50px;
+    color: #122C91;
+    padding: 0 0 0 20px;
+}
+
+section .right .bottom .inf2{
+    padding: 20px 0 0 20px ;
+    color: #122C91;
+    font-size: 18px;
+}
+

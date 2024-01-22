@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Broadway</title>
+</head>
+
+<body>
+    <button id="onoff" onclick="on_off()">ON</button><br>
+
+    <img id="off_img" src="OFF.jpg" width="50%">
+    <img id="on_img" src="ON.jpg" width="50%" style="display: none;">
+
+    <script>
+        function on_off() {
+            var isOff = document.getElementById("onoff").innerText === "ON";
+            if (isOff) {
+                document.getElementById("on_img").style.display = 'block';
+                document.getElementById("off_img").style.display = 'none';
+                document.getElementById("onoff").innerText = "OFF";
+            } else {
+                document.getElementById("on_img").style.display = 'none';
+                document.getElementById("off_img").style.display = 'block'; 
+                document.getElementById("onoff").innerText = "ON";
+            }
+            
+        }
+    </script>
+
+
+
+</body>
+
+</html>

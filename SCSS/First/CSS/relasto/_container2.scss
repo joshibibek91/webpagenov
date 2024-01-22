@@ -1,0 +1,72 @@
+
+
+.container2{
+    // background-color: rgb(224, 161, 161);
+    
+    // height: 700px;
+    display: grid;
+    margin: 100px 170px 0 170px;
+    gap: 20px;
+    grid-template-columns: 625px 250px 250px;
+    grid-template-rows: 195px 195px;
+    grid-template-areas: "simple search visit"
+                        "simple get enjoy";
+
+    .simple{
+        padding: 70px 55px 0 55px;
+        background-color: #FFE0CE;
+        border-radius: 20px;
+        grid-area: simple;
+        .p1{
+            font-size: 36px;
+        }
+        .p2{
+            font-size: 18px;
+            font-weight: 100;
+            padding-top: 30px;
+        }
+        button{
+            margin-top: 60px;
+            background-color: black;
+            color: white;
+            border-radius: 10px;
+            height: 50px;
+            width: 140px;
+            font-size: 16px;
+            
+            font-family: 'Manrope';
+            
+        }
+    }
+
+    .search{
+        background-color: #FBEEE6;
+        border-radius: 15px;
+        grid-area: search;
+        font-size: 28px;
+        padding: 30px;
+    }
+
+    .visit{
+        background-color: #FBEEE6;
+        border-radius: 15px;
+        grid-area: visit;
+        font-size: 28px;
+        padding: 30px;
+    }
+    .get{
+        background-color: #FBEEE6;
+        border-radius: 15px;
+        grid-area: get;
+        font-size: 28px;
+        padding: 30px;
+    }
+    .enjoy{
+        background-color: #FBEEE6;
+        border-radius: 15px;
+        grid-area: enjoy;
+        font-size: 28px;
+        padding: 30px;
+    }
+
+}

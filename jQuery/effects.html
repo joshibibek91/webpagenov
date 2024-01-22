@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .square {
+            height: 100px;
+            width: 100px;
+            background-color: red;
+            position: relative;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Effects</h1>
+    <button id="show">Show</button>
+    <button id="hide">Hide</button>
+    <button id="hide-show">Hide/Show</button>
+    <button id="fadein">Fade In</button>
+    <button id="fadeout">Fade Out</button>
+    <button id="fadetoggle">Fade Toggle</button>
+    <button id="slideup">Slide Up</button>
+    <button id="slidedown">Slide Down</button>
+    <button id="slidetoggle">Slide Toggle</button>
+    <button id="animate">Aminate</button>
+    <button id="stop">Stop</button>
+    <hr>
+    <div class="square"></div>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+    <script>
+        $('#show').click(function () {
+            $('.square').show(1000)
+        })
+        $('#hide').click(function () {
+            $('.square').hide(2000)
+        })
+        $('#hide-show').click(function () {
+            $('.square').toggle(2000)
+        })
+        $('#fadein').click(function () {
+            $('.square').fadeIn(2000)
+        })
+        $('#fadeout').click(function () {
+            $('.square').fadeOut()
+        })
+        $('#fadetoggle').click(function () {
+            $('.square').fadeToggle()
+        })
+        $('#slideup').click(function () {
+            $('.square').slideUp()
+        })
+        $('#slidedown').click(function () {
+            $('.square').slideDown()
+        })
+        $('#slidetoggle').click(function () {
+            $('.square').slideToggle()
+        })
+        $('#animate').click(function () {
+            $('.square').animate({ left: '800px' }, 3000)
+        })
+        $('#stop').click(function () {
+            $('.square').stop()
+        })
+
+
+
+
+    </script>
+
+</body>
+
+</html>

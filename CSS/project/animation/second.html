@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin:100px
+
+        }
+
+        .box{
+            width: 300px;
+            height: 150px;
+            background-color: red;
+            /* position: relative;
+            animation-name: ani_move;
+            animation-duration: 5s;
+            animation-direction: alternate;
+            animation-timing-function: linear;
+            transform: translate(100px, 100px);
+             */
+        }
+
+        .box:hover{
+            transform: scale(1.5);
+            transform: rotate(45deg);
+            transition: 1s;
+        }
+        @keyframes ani_move {
+            0%{ left:0; top:0; background-color: yellow; }
+            25%{left: 500px;top:0; background-color: mediumseagreen; border-radius: 50%;}
+            50%{left:500px; top: 200px; background-color: purple;}
+            75%{left: 0; top: 200px; background-color:green;}
+            100%{ left: 0; top:0; background-color: aqua;}
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>
