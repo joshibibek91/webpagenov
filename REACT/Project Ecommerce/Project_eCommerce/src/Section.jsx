@@ -4,6 +4,7 @@ import Contact from './pages/Contact/Contact'
 import Page_not_found from './pages/Page_not_found/Page_not_found'
 import Home from './pages/Home/Home'
 import About from './pages/About'
+import Categories from './pages/Categories/Categories'
 
 
 
@@ -19,6 +20,7 @@ function Section() {
         <Route path="/about" element={<About/>}/>
         <Route path="*" element={<Page_not_found/>}/>
         <Route path="/contact" element={<Contact/>}/>
+        <Route path="/categories" element={<Categories/>}/>
         
         
 

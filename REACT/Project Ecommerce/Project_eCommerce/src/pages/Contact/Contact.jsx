@@ -2,6 +2,7 @@ import React from 'react'
 import "./style.scss"
 import Form from '../../components/Form/Form'
 import Map from '../../components/Google Map/Map'
+import Footer from './Footer'
 
 function Contact() {
   return (
@@ -23,7 +24,7 @@ function Contact() {
             </div>
           </div>
           <div className="getintouch">
-            <div className="heading">GET IN TOUCH</div>
+            <div className="heading">GET IN TOUCH</div><br />
             <div className="form">
               <Form/>
             </div>
@@ -33,6 +34,7 @@ function Contact() {
         <div className="right"><Map/></div>
 
       </div>
+      <Footer/>
     </>
   )
 }

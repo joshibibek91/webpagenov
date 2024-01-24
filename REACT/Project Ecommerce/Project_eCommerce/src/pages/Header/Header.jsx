@@ -13,7 +13,7 @@ function Header() {
         <div className="middle">
           <Link className="home" to="/">Home</Link>
           <Link className="shop" aria-current="page" to="/shop">Shop</Link>
-          <Link className="collections" to="/collections">Collections</Link>
+          <Link className="categories" to="/categories">Categories</Link>
           <Link className="blog" to="/blog">Blog</Link>
           <Link className="about" to="/about">About</Link>
           <Link className="contact" aria-current="page" to="/contact">Contact</Link>

@@ -1,5 +1,6 @@
 import { useState } from "react"
 import React from 'react'
+import "./style.scss"
 
 function Form() {
     const [formData, setFormData] = useState({
@@ -26,42 +27,53 @@ function Form() {
       return (
         <div className="form-container">
           <form onSubmit={handleSubmit}>
-            <label htmlFor="name">Name:</label>
+            {/* <label htmlFor="name">Name:</label> */}
+            <div className="nameemail">
             <input
               type="text"
               id="name"
               name="name"
+              placeholder="your name"
               value={formData.name}
               onChange={handleChange}
             />
     
-            <label htmlFor="email">Email:</label>
+            {/* <label htmlFor="email">Email:</label> */}
             <input
+            
               type="email"
               id="email"
               name="email"
+              placeholder="your email"
               value={formData.email}
               onChange={handleChange}
-            />
+            /> 
+            </div>
     
-            <label htmlFor="subject">Subject:</label>
+            {/* <label htmlFor="subject">Subject:</label> */}
+            <div className="subject">
             <input
               type="text"
               id="subject"
               name="subject"
+              placeholder="subject"
               value={formData.subject}
               onChange={handleChange}
-            />
+            /> </div>
     
-            <label htmlFor="message">Message:</label>
+            {/* <label htmlFor="message">Message:</label> */}
+
+            <div className="msg">
             <textarea
               id="message"
               name="message"
+              placeholder="message"
               value={formData.message}
               onChange={handleChange}
-            />
+            /> 
+            </div>
     
-            <button type="submit">Submit</button>
+            <button type="submit">SEND</button>
           </form>
         </div>
       );

@@ -31,7 +31,7 @@ useEffect(()=>{
 
     <div className="container-fluid">
       <div className="row">
-        {product.map((p)=>
+        {cat.map((p)=>
         <div className="col m-3">
         <div className="card">
   <div className="image">
